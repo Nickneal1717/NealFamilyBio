@@ -100,7 +100,6 @@ let startingState = {
   xp: xpText,
   health: healthText,
   gold: goldText,
-  currentWeapon: 0,
   inventory: [weapons[0]],
 }
 
@@ -241,7 +240,7 @@ button3.onclick = fight.goFight;
 
 /* Location Updates */
 function update(updateLocation) {
-  monsterStatsContainer.style.display = "none";
+  monsterStatsContainer.style.display = "hidden";
   button1.innerText = updateLocation["buttonText"][0];
   button2.innerText = updateLocation["buttonText"][1];
   button3.innerText = updateLocation["buttonText"][2];
@@ -299,8 +298,6 @@ let easterEggTrigger = {
     }
   }
 }
-
-
 
 /* Battle */
 const battle = [
