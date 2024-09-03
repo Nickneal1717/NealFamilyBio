@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: 00001f;
+  width: 98%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+h1 {
+  color: white;
+  margin-top:25px;
+}
+input {
+  margin-top: 25px;
+  background-color: grey;
+  border: 3px solid white;
+  color: black;
+  font-size: 20px;
+}
+button {
+   background-color: orange;
+   border-color: orange;
+   color: black;
+   margin: 20px 0 0 40%;
+   cursor: pointer;
+}
+main > #output {
+  color: white;
+  border: 3px solid orange;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  align-items: center
+}
+  </style>
+  <head>
+     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <main id="page-container">
+      <h1>Roman Numeral Converter</h1>
+      <form id="form" class="form">
+        <fieldset>
+          <input id="number" type="number" required="" placeholder="Enter a number"/>
+          <br>
+          <button id="convert-btn" type="button">Submit</button>
+        </fieldset>
+      </form>
+      <div id="output" class="output hidden">Test</div>
+      </main>
+      <script src="script.js"></script>
+    </body>
+</html>
